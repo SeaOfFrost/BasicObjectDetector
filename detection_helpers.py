@@ -14,5 +14,5 @@ def image_pyramid(image, scale = 1.5, minSize = (224, 224)):
         # if the image is too small, break from the loop
         if resized.shape[0] < minSize[1] or resized.shape[1] < minSize[0]:
             break
-        # Return rescaled image
-	    yield resized
+        # Return resized image
+        yield resized

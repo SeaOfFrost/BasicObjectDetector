@@ -51,8 +51,8 @@ for image in pyramid:
         # Scale to find the coordinates in the original image
         x = int(x*scale)
         y = int(y*scale)
-        w = itn(ROI_SIZE[0]*scale)
-        h = itn(ROI_SIZE[1]*scale)
+        w = int(ROI_SIZE[0]*scale)
+        h = int(ROI_SIZE[1]*scale)
 
         # Resize ROI to send as input to ResNet
         roi = cv2.resize(roiOrig, INPUT_SIZE)
